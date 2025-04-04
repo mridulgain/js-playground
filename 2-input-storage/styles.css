@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: cursive;
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading{
+    margin-bottom: 50px;
+}
+
+.heading h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.heading p{
+    font-size: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:focus {
+    border-color: #73b7ffe0;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.382);
+    box-shadow: 0 8px 42px rgba(0, 0, 0, 0.533);
+    padding: 15px;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+}
