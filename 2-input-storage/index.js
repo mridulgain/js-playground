@@ -23,10 +23,30 @@ console.log("userList data type:", typeof userList);
 console.log("userRating datatype:", typeof userRating);
 
 
-// let selectedRating = 0
+let selectedRating = 0;
 
+document.querySelectorAll(".star").forEach((star) => {
+    star.addEventListener("click", () => {
+        selectedRating = Number(star.getAttribute("data-value"));
+        // document.getElementById("rating").value = selectedRating;
+        highlightStars(Number(star.getAttribute("data-value")));
+    });
+})
 
-
+function highlightStars(value) {
+    document.querySelectorAll(".star").forEach(star => {
+        if (star.getAttribute("data-value") <= value) {
+            star.innerHTML = '&#9733'
+            star.classList.add("active");
+        }else{
+            star.innerHTML = '&#9734'
+            star.classList.remove("active");
+        }
+    });
+    // for (let i = 0; i < value; i++) {
+    //     document.querySelectorAll(".star")[i].classList.add("active");
+    // }
+}
 
 document.getElementById("submit").onclick = function() {
     
@@ -38,7 +58,7 @@ document.getElementById("submit").onclick = function() {
     userList = updateList("userList", userName);
     console.log("userRating list",  userList);
     
-    userRating = Number(document.getElementById("rating").value);
+    userRating = Number(selectedRating);
     if (!isNaN(userRating) && userRating >= 1 && userRating <= 5) {
          
         console.log(typeof userRating);

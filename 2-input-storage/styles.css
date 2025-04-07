@@ -104,3 +104,8 @@ button:hover {
 .star-rating .star:hover {
     color: gold;
 }
+
+.star.active{
+    color: gold;
+}
+
