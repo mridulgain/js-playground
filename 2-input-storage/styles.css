@@ -84,3 +84,23 @@ button:hover {
     background: rgba(0, 0, 0, 0.74);
     cursor: pointer;
 }
+
+#avgRating {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating .star:hover {
+    color: gold;
+}
