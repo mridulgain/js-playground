@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to right, #ffeeee, #ddefbb);
+}
+
+.size-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -200px;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.707);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.318);
+    cursor: pointer;
+}
