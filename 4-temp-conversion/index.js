@@ -1,12 +1,13 @@
-let value = 0
 document.getElementById('submit').onclick = function() {
+    let isSelected = false
     document.getElementsByName('type').forEach(e => {
         if(e.checked){
+            let value = 0
+            isSelected = true
             if (e.value == "CtoF"){
                 value = document.getElementById("input").value
                 convertedValue = (value * 9/5) + 32
                 document.getElementById("result").innerHTML = `${value}${"&#176;"}C in Fahrenheit is ${convertedValue.toFixed(2)}${"&#176;"}F`
-
             }else if(e.value == "FtoC"){
                 value = document.getElementById("input").value
                 convertedValue = (value - 32) * 5/9
@@ -14,6 +15,9 @@ document.getElementById('submit').onclick = function() {
             }
         }
     })
+    if (!isSelected){
+        alert("Please select a conversion type")
+    }
 }
 
 // dark mode
