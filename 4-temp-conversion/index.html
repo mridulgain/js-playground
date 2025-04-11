@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form action="">
-        <h1>Temperature Converter</h1>
-        <input type="number" name="" id="">
+    <div class="home-page">
+        <h1 class="heading">Temperature Converter</h1>
+        <input type="number" class= "input" id="input" placeholder="Enter Your Value">
+        
+        <div class="converter">
+            <label for="CtoF">Celsius &rarr; Fahrenheit</label>
+            <input type="radio" class="radio-button" name="type" value="CtoF">
 
-        <input type="radio" name="" id="">
-        <label for="">Celsius -> Fahrenheit</label>
+            <label for="FtoC">Fahrenheit &rarr; Celsius</label>
+            <input type="radio" class="radio-button" name="type" value="FtoC" >
+        </div>
 
-        <input type="radio" name="" id="">
-        <label for="">Fahrenheit -> Celsius</label>
+        <input type="submit" value="Convert" class="submit" id="submit">
+        <div class="result">
+            <h2><u>Result</u>: </h2>
+            <p id="result"></p> 
+        </div>
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
 
-        <input type="submit" value="">
-    </form>
-    <div>
-        <h2>Result</h2>
-        <p id="result"></p>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
