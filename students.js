@@ -32,3 +32,40 @@ for (let i = 0; i < students.length; i++){
 // printing, formatted printing
 // if else condition
 // for loop, while loop
+
+// call backs
+
+hello(printName)
+
+
+function hello(callback){
+    setTimeout(() => {
+        console.log("Hello world");
+        callback();
+    }, 3000);
+    // console.log("Hello world");
+}
+
+function printName(){
+    console.log("My name is John");
+}
+
+// API call
+// file read/write
+// db calls
+
+
+let roll = [1,2,3,4];
+
+
+roll.forEach((e,i,arr)=>{
+    arr[i] = e + 100;
+});
+roll.forEach(print);
+
+function print(e){
+    console.log(e);
+}
+
+
+// element, index, array
