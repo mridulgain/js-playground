@@ -12,7 +12,7 @@ function start() {
     }
     isRunning = true;
     startTime = Date.now() - elapsedTime;
-    timer = setInterval(updateTime, 10);
+    timer = setInterval(()=> {display.innerText = updateTime()}, 10);
 }
 
 function stop() {
@@ -39,18 +39,7 @@ function lap() {
         return;
     }
 
-    let currentLapTime = Date.now() - startTime;
-    let ms = Math.floor(currentLapTime % 1000 / 10);
-    let seconds = Math.floor((currentLapTime / 1000) % 60);
-    let minutes = Math.floor((currentLapTime / (1000 * 60)) % 60);
-    let hours = Math.floor((currentLapTime / (1000 * 60 * 60)) % 24);
-
-    hours = hours.toString().padStart(2, '0');
-    minutes = minutes.toString().padStart(2, '0');
-    seconds = seconds.toString().padStart(2, '0');
-    ms = ms.toString().padStart(2, '0');
-
-    let lapTime = `${hours}:${minutes}:${seconds}:${ms}`;
+    let lapTime = updateTime();
     laps.push(lapTime); 
 
     let lapElement = document.createElement('p');
@@ -78,5 +67,5 @@ function updateTime() {
     seconds = seconds.toString().padStart(2, '0');
     ms = ms.toString().padStart(2, '0');
 
-    display.innerText = `${hours}:${minutes}:${seconds}:${ms}`;
+    return `${hours}:${minutes}:${seconds}:${ms}`;
 }

@@ -92,8 +92,12 @@ button{
 }
 
 button:hover {
-    background: #d2042d95;
+    background: hsla(348, 96%, 42%, 0.584);
     cursor: pointer;
+}
+
+button:active {
+    background: hsla(348, 96%, 42%, 0.45);
 }
 
 button a {
