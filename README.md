@@ -10,6 +10,7 @@ Welcome! Below are the links to each project or module in this repository:
 4. [Temperature Conversion](https://mridul-avesha.github.io/js-playground/4-temp-conversion)
 5. [Dice Roller](https://mridul-avesha.github.io/js-playground/5-dice-roller)
 6. [Clock](https://mridul-avesha.github.io/js-playground/6-clock)
+7. [Stop Watch](https://mridul-avesha.github.io/js-playground/7-stop-watch)
 
 ## 🧪 Others
 
