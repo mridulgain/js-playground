@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="weatherForm">
+            <input type="text" class="cityInput" id="cityInput" placeholder="Enter city name" required>
+            <button type="button" class="submitButton" id="submitButton">Get Weather</button>
+        </form>
+        <div class="card">
+            <h1 class="cityDisplay"></h1>
+            <p class="temperatureDisplay"></p>
+            <p class="humidityDisplay"></p>
+            <p class="descriptionDisplay"></p>
+            <p class="realFeelDisplay"></p>
+            <p class="windSpeedDisplay"></p>
+            <p class="emojiDisplay"></p>
+            <p class="errorDisplay">Please check entered city!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

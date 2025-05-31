@@ -1,0 +1,119 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body::before {
+  background: linear-gradient(#e91e63, #ffc107);
+  clip-path: circle(22% at 30% 20%);
+}
+
+body::after {
+  background: linear-gradient(#fff, #da00ff);
+  clip-path: circle(20% at 70% 90%);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    perspective: 1000px;
+    z-index: 10;
+}
+
+.weatherForm {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#cityInput {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    text-align: center;
+    font-size: 20px;
+}
+
+.card h1 {
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.card p, .card h1 {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.emojiDisplay {
+    font-size: 4rem;
+    margin: 0.5rem;
+}
+
+.errorDisplay {
+    display: none;
+    color: red;
+    margin-top: 1rem;
+    font-weight: bold;
+}
