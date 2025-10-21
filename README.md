@@ -11,6 +11,8 @@ Welcome! Below are the links to each project or module in this repository:
 5. [Dice Roller](https://mridul-avesha.github.io/js-playground/5-dice-roller)
 6. [Clock](https://mridul-avesha.github.io/js-playground/6-clock)
 7. [Stop Watch](https://mridul-avesha.github.io/js-playground/7-stop-watch)
+8. [Calculator](https://mridul-avesha.github.io/js-playground/8-calculator)
+9. [Weather App](https://mridul-avesha.github.io/js-playground/9-weather-app)
 
 ## 🧪 Others
 
